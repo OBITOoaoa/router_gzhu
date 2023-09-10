@@ -1,0 +1,82 @@
+
+
+ÿ?ÿ?ÿ?ÿ?
+
+
+
+
+BusyBox v1.22.1 (2017-02-15 13:52:46 CST) built-in shell (ash)
+Enter 'help' for a list of built-in commands.
+
+    ___  __ _______________  __  _____  ___  ________  ___
+   / _ \/ // /  _/ ___/ __ \/  |/  /  |/  / / __/ __ \/ _ \
+  / ___/ _  // // /__/ /_/ / /|_/ / /|_/ / _\ \/ /_/ / ___/
+ /_/  /_//_/___/\___/\____/_/  /_/_/  /_/ /___/\____/_/
+ ----------------------------------------------------------
+ Barrier Breaker, unknown
+ ----------------------------------------------------------
+ PID=K2
+ BUILD_TYPE=release
+ BUILD_NUMBER=163
+ BUILD_TIME=20170215-134532
+ ----------------------------------------------------------
+ MTK OpenWrt SDK V3.4
+ revision : adab2180
+ benchmark : APSoC SDK 5.0.1.0
+ kernel : 144992
+ ----------------------------------------------------------
+root@K2:/www/cgi-bin# 
+
+
+root
+
+
+
+/bin/ash: root: not found
+root@K2:/www/cgi-bin# 
+
+
+root
+/bin/ash: root: not found
+root@K2:/www/cgi-bin# 
+
+
+cd /tmp
+root@K2:/tmp# 
+
+
+cat /proc/mtd
+
+
+
+dev:    size   erasesize  name
+mtd0: 00800000 00010000 "ALL"
+mtd1: 00030000 00010000 "Bootloader"
+mtd2: 00010000 00010000 "Config"
+mtd3: 00010000 00010000 "Factory"
+mtd4: 00050000 00010000 "permanent_config"
+mtd5: 00760000 00010000 "firmware"
+mtd6: 0062be32 00010000 "rootfs"
+mtd7: 00070000 00010000 "rootfs_data"
+root@K2:/tmp# 
+
+
+wget http://192.168.2.247:806/breed/r1008/breed-mt7620-phicomm-psg
+1208.bin
+
+
+
+--2016-01-01 08:28:06--  http://192.168.2.247:806/breed/r1008/breed-mt7620-phicomm-psg1208.bin
+
+
+
+Connecting to 192.168.2.247:806... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 85514 (84K) [application/octet-stream]
+Saving to: 'breed-mt7620-phicomm-psg1208.bin.2'
+
+          breed-mt7   0%[                    ]       0  --.-KB/s               breed-mt7620-phicom 100%[===================>]  83.51K  --.-KB/s    in 0.005s  
+
+2016-01-01 08:28:06 (17.7 MB/s) - 'breed-mt7620-phicomm-psg1208.bin.2' saved [85514/85514]
+
+root@K2:/tmp# 
